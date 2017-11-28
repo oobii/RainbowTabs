@@ -8,12 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class RedViewController: UIViewController {
+    
+    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        tabBarItem.badgeValue = "!!"
     }
+    
+    @IBAction func unwindToRedSegue(for unwindSegue: UIStoryboardSegue) {
+        
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
